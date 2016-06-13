@@ -1,5 +1,5 @@
 {
-    "name": "mariuzzo/laravel-js-localization",
+    "name": "SamuelNorbury/laravel-js-localization",
     "description": "Laravel Localization in JavaScript",
     "type": "library",
     "keywords": ["laravel", "laravel 5", "localization", "i18n", "javascript", "js", "lang"],
@@ -30,7 +30,7 @@
     },
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*|5.2.*",
+        "laravel/framework": "5.*",
         "tedivm/jshrink": "1.0.*"
     },
     "require-dev": {
