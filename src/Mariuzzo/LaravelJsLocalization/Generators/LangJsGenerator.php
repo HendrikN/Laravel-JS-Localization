@@ -1,4 +1,4 @@
-<?php namespace Mariuzzo\LaravelJsLocalization\Generators;
+<?php namespace SamuelNorbury\LaravelJsLocalization\Generators;
 
 use Illuminate\Filesystem\Filesystem as File;
 use JShrink\Minifier;
@@ -6,7 +6,7 @@ use JShrink\Minifier;
 /**
  * The LangJsGenerator class.
  *
- * @author Rubens Mariuzzo <rubens@mariuzzo.com>
+ * @author Rubens SamuelNorbury <rubens@mariuzzo.com>
  */
 class LangJsGenerator
 {

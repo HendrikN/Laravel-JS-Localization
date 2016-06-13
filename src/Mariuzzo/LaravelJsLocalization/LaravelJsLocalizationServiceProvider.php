@@ -1,11 +1,11 @@
-<?php namespace Mariuzzo\LaravelJsLocalization;
+<?php namespace SamuelNorbury\LaravelJsLocalization;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * The LaravelJsLocalizationServiceProvider class.
  *
- * @author Rubens Mariuzzo <rubens@mariuzzo.com>
+ * @author Rubens SamuelNorbury <rubens@mariuzzo.com>
  */
 class LaravelJsLocalizationServiceProvider extends ServiceProvider
 {

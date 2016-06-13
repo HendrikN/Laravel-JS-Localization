@@ -37,7 +37,7 @@ In your Laravel app go to `app/config/app.php` and add the following service pro
 ```php
 'providers' => [
     // ...
-    Mariuzzo\LaravelJsLocalization\LaravelJsLocalizationServiceProvider::class,
+    SamuelNorbury\LaravelJsLocalization\LaravelJsLocalizationServiceProvider::class,
     // ...
 ],
 ```

@@ -6,7 +6,7 @@
     "homepage": "https://github.com/rmariuzzo/laravel-js-localization",
     "license": "MIT",
     "authors": [{
-        "name": "Rubens Mariuzzo",
+        "name": "Rubens SamuelNorbury",
         "email": "rubens@mariuzzo.com",
         "homepage": "https://github.com/rmariuzzo",
         "role": "Developer"
@@ -40,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Mariuzzo\\LaravelJsLocalization\\": "src/Mariuzzo/LaravelJsLocalization/"
+            "SamuelNorbury\\LaravelJsLocalization\\": "src/SamuelNorbury/LaravelJsLocalization/"
         }
     },
   "autoload-dev": {
     "psr-4": {
-      "Mariuzzo\\LaravelJsLocalization\\": "tests/"
+      "SamuelNorbury\\LaravelJsLocalization\\": "tests/"
     }
   },
     "minimum-stability": "stable"

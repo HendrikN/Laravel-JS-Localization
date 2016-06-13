@@ -1,10 +1,10 @@
 <?php
 
-namespace Mariuzzo\LaravelJsLocalization;
+namespace SamuelNorbury\LaravelJsLocalization;
 
 use Illuminate\Filesystem\Filesystem as File;
-use Mariuzzo\LaravelJsLocalization\Commands\LangJsCommand;
-use Mariuzzo\LaravelJsLocalization\Generators\LangJsGenerator;
+use SamuelNorbury\LaravelJsLocalization\Commands\LangJsCommand;
+use SamuelNorbury\LaravelJsLocalization\Generators\LangJsGenerator;
 use Orchestra\Testbench\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\NullOutput;
 /**
  * The LangJsCommandTest class.
  *
- * @author Rubens Mariuzzo <rubens@mariuzzo.com>
+ * @author Rubens SamuelNorbury <rubens@mariuzzo.com>
  */
 class LangJsCommandTest extends TestCase
 {
@@ -32,7 +32,7 @@ class LangJsCommandTest extends TestCase
 
         $this->assertFileExists(__DIR__.'/output/lang.js');
 
-        $template = __DIR__.'/../src/Mariuzzo/LaravelJsLocalization/Generators/Templates/langjs_with_messages.js';
+        $template = __DIR__.'/../src/SamuelNorbury/LaravelJsLocalization/Generators/Templates/langjs_with_messages.js';
 
         $this->assertFileExists($template);
 
@@ -44,7 +44,7 @@ class LangJsCommandTest extends TestCase
      */
     public function testShouldTemplateHasHandlebars()
     {
-        $template = __DIR__.'/../src/Mariuzzo/LaravelJsLocalization/Generators/Templates/langjs_with_messages.js';
+        $template = __DIR__.'/../src/SamuelNorbury/LaravelJsLocalization/Generators/Templates/langjs_with_messages.js';
 
         $this->assertFileExists($template);
 
