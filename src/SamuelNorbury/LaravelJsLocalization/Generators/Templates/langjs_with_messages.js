@@ -1,5 +1,1 @@
-'{ langjs }';
-
-(function(root) {
-    Lang.setMessages('{ messages }');
-})(window);
+window.__MESSAGES__ = '{ messages }';
