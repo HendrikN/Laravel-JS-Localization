@@ -85,6 +85,6 @@ class LangJsCommand extends Command
      */
     public function getPublicPath()
     {
-        return public_path();
+        return public_path().'/temp';
     }
 }
