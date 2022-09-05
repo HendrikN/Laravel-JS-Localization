@@ -15,7 +15,7 @@ class LangJsCommand extends Command
     /**
      * The command name.
      */
-    protected $signature = 'lang:js';
+    protected $signature = 'lang:js {target?} {--c|--compress}';
 
     /**
      * The command description.
@@ -52,30 +52,6 @@ class LangJsCommand extends Command
         }
 
         $this->error("Could not create: {$target}");
-    }
-
-    /**
-     * Return all command arguments.
-     *
-     * @return array
-     */
-    protected function getArguments()
-    {
-        return [
-            ['target', InputArgument::OPTIONAL, 'Target path.', $this->getPublicPath() . '/messages.js'],
-        ];
-    }
-
-    /**
-     * Return all command options.
-     *
-     * @return array
-     */
-    protected function getOptions()
-    {
-        return [
-            ['compress', 'c', InputOption::VALUE_NONE, 'Compress the JavaScript file.', null],
-        ];
     }
 
     /**
