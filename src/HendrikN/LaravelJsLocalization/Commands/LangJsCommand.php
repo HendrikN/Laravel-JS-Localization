@@ -5,11 +5,6 @@ use HendrikN\LaravelJsLocalization\Generators\LangJsGenerator;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-/**
- * The LangJsCommand class.
- *
- * @author Rubens HendrikN <rubens@mariuzzo.com>
- */
 class LangJsCommand extends Command
 {
     /**
