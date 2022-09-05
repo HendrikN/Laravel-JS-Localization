@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Providers;
+namespace HendrikN\LaravelJsLocalization;
 
 use Illuminate\Support\ServiceProvider;
-use SamuelNorbury\LaravelJsLocalization\Commands\LangJsCommand;
-use SamuelNorbury\LaravelJsLocalization\Generators\LangJsGenerator;
+use HendrikN\LaravelJsLocalization\Commands\LangJsCommand;
+use HendrikN\LaravelJsLocalization\Generators\LangJsGenerator;
 
 /**
  * The LaravelJsLocalizationServiceProvider class.
  *
- * @author Rubens SamuelNorbury <rubens@mariuzzo.com>
+ * @author Rubens HendrikN <rubens@mariuzzo.com>
  */
 class LaravelJsLocalizationServiceProvider extends ServiceProvider
 {

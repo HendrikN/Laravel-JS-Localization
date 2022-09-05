@@ -1,14 +1,14 @@
-<?php namespace SamuelNorbury\LaravelJsLocalization\Commands;
+<?php namespace HendrikN\LaravelJsLocalization\Commands;
 
 use Illuminate\Console\Command;
-use SamuelNorbury\LaravelJsLocalization\Generators\LangJsGenerator;
+use HendrikN\LaravelJsLocalization\Generators\LangJsGenerator;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
 /**
  * The LangJsCommand class.
  *
- * @author Rubens SamuelNorbury <rubens@mariuzzo.com>
+ * @author Rubens HendrikN <rubens@mariuzzo.com>
  */
 class LangJsCommand extends Command
 {

@@ -40,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SamuelNorbury\\LaravelJsLocalization\\": "src/SamuelNorbury/LaravelJsLocalization/"
+            "HendrikN\\LaravelJsLocalization\\": "src/HendrikN/LaravelJsLocalization/"
         }
     },
   "autoload-dev": {
     "psr-4": {
-      "SamuelNorbury\\LaravelJsLocalization\\": "tests/"
+      "HendrikN\\LaravelJsLocalization\\": "tests/"
     }
   },
     "minimum-stability": "stable"
