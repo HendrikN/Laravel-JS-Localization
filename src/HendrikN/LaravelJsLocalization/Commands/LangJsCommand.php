@@ -15,7 +15,7 @@ class LangJsCommand extends Command
     /**
      * The command name.
      */
-    protected $name = 'lang:js';
+    protected $signature = 'lang:js';
 
     /**
      * The command description.
@@ -41,7 +41,7 @@ class LangJsCommand extends Command
     /**
      * Fire the command.
      */
-    public function fire()
+    public function handle()
     {
         $target = $this->argument('target');
         $options = ['compress' => $this->option('compress')];
