@@ -2,49 +2,29 @@
 
 namespace HendrikN\LaravelJsLocalization;
 
-use Illuminate\Support\ServiceProvider;
 use HendrikN\LaravelJsLocalization\Commands\LangJsCommand;
 use HendrikN\LaravelJsLocalization\Generators\LangJsGenerator;
+use Illuminate\Support\ServiceProvider;
 
-/**
- * The LaravelJsLocalizationServiceProvider class.
- *
- * @author Rubens HendrikN <rubens@mariuzzo.com>
- */
 class LaravelJsLocalizationServiceProvider extends ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
 
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
     public function register()
     {
-        $this->app->singleton('localization.js', function ($app) {
+        $this->app->singleton(LangJsGenerator::class, function ($app) {
             $files = $app['files'];
             $langs = $app['path.base'] . '/resources/lang';
-            $generator = new LangJsGenerator($files, $langs);
-
-            return new LangJsCommand($generator);
+            return new LangJsGenerator($files, $langs);
         });
-
-        $this->commands('localization.js');
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
+    public function boot()
+    {
+        $this->commands([LangJsCommand::class]);
+    }
+
     public function provides()
     {
-        return ['localization.js'];
+        return [LangJsGenerator::class];
     }
 }
