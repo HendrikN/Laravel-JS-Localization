@@ -29,7 +29,7 @@
         "source": "https://github.com/rmariuzzo/laravel-js-localization"
     },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0",
         "laravel/framework": "*",
         "tedivm/jshrink": "1.0.*"
     },
