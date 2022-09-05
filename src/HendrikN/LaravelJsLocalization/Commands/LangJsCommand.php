@@ -13,7 +13,7 @@ class LangJsCommand extends Command
 
     public function handle(LangJsGenerator $generator)
     {
-        $target = $this->argument('target') ?? public_path();
+        $target = $this->argument('target') ?? public_path('messages.js');
         $options = ['compress' => $this->option('compress')];
 
         if ($generator->generate($target, $options)) {
