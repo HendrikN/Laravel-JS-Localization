@@ -46,7 +46,7 @@ That's it!
 Usage
 -----
 
-This project comes with a command that generate the JavaScript version of all your messages found at: `app/lang` or `resources/lang` directory. The resulting JavaScript file will have the whole bunch of messages and a thin library similar to Laravel's `Lang` class.
+This project comes with a command that generate the JavaScript version of all your messages found at: `app/lang` or `lang` directory. The resulting JavaScript file will have the whole bunch of messages and a thin library similar to Laravel's `Lang` class.
 
 **Generating JS messages**
 

@@ -13,7 +13,7 @@ class LaravelJsLocalizationServiceProvider extends ServiceProvider
     {
         $this->app->singleton(LangJsGenerator::class, function ($app) {
             $files = $app['files'];
-            $langs = $app['path.base'] . '/resources/lang';
+            $langs = $app['path.base'] . '/lang';
             return new LangJsGenerator($files, $langs);
         });
     }
