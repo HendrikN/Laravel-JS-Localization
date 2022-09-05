@@ -1,6 +1,10 @@
-<?php namespace SamuelNorbury\LaravelJsLocalization;
+<?php
+
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use SamuelNorbury\LaravelJsLocalization\Commands\LangJsCommand;
+use SamuelNorbury\LaravelJsLocalization\Generators\LangJsGenerator;
 
 /**
  * The LaravelJsLocalizationServiceProvider class.
@@ -23,12 +27,12 @@ class LaravelJsLocalizationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['localization.js'] = $this->app->share(function ($app)
-        {
+        $this->app->singleton('localization.js', function ($app) {
             $files = $app['files'];
-            $langs = $app['path.base'].'/resources/lang';
-            $generator = new Generators\LangJsGenerator($files, $langs);
-            return new Commands\LangJsCommand($generator);
+            $langs = $app['path.base'] . '/resources/lang';
+            $generator = new LangJsGenerator($files, $langs);
+
+            return new LangJsCommand($generator);
         });
 
         $this->commands('localization.js');
@@ -41,6 +45,6 @@ class LaravelJsLocalizationServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('localization.js');
+        return ['localization.js'];
     }
 }
